@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Mynerve&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.body{
+    background: url("../grey.jpg");
+    min-height: 100vh;
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#board{
+    background: black;
+    width: 90vmin;
+    height: 92vmin;
+    display: grid;
+    grid-template-columns: repeat(18, 1fr);
+    grid-template-rows: repeat(18, 1fr);
+
+}
+
+.head{
+    background-color: rgb(255, 0, 0);
+    border-radius:9px;
+    transform: scale(1.02)
+}
+
+.snake{
+    background-color: rgb(123, 0, 255);
+   
+    border-radius: 12px;
+}
+
+#scoreBox{
+    position: absolute;
+    top: 9px;
+    right: 200px;
+    font-size: 39px;
+    font-weight: bold;
+    font-family: 'Mynerve', cursive;
+}
+
+#hiscoreBox{
+    position: absolute;
+    top: 59px;
+    right: 180px;
+    font-size: 39px;
+    font-weight: bold;
+    font-family: 'Mynerve', cursive;
+}
+
+.food{
+    background-color: rgb(255, 255, 255);
+    border-radius: 8px;
+
+}
